@@ -10,16 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func startButtonPress(sender: AnyObject) {
+        performSegue(withIdentifier: "PizaSegue",sender: self)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "PizaSegue") {
+            let pizaController: PizaController = (segue.destination as? PizaController)!
+        }
     }
-
-
 }
 

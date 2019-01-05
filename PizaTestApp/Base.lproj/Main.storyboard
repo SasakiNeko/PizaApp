@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,86 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PizaTestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIZAアプリ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCS-vm-q24">
+                                <rect key="frame" x="123" y="107" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaT-TA-Ba2">
+                                <rect key="frame" x="79" y="437" width="217" height="161"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="161" id="k0q-9q-d0o"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="20737.png"/>
+                                <connections>
+                                    <action selector="startButtonPressWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LWq-8q-NTh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sCS-vm-q24" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2GM-0w-puF"/>
+                            <constraint firstItem="DaT-TA-Ba2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BM6-WT-TkB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DaT-TA-Ba2" secondAttribute="bottom" constant="46" id="JYc-UR-0cN"/>
+                            <constraint firstItem="DaT-TA-Ba2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="UnP-Hd-Xx1"/>
+                            <constraint firstItem="sCS-vm-q24" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="frW-T8-Izw"/>
+                            <constraint firstItem="sCS-vm-q24" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="xQV-P5-R2N"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="tbU-Na-Lki" kind="show" identifier="PizaSegue" id="3nI-sO-2ql"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="4" y="60.719640179910051"/>
+        </scene>
+        <!--Piza Controller-->
+        <scene sceneID="5KD-l5-PTE">
+            <objects>
+                <viewController id="tbU-Na-Lki" customClass="PizaController" customModule="PizaTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kbg-Zt-hle">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hr1-KN-Y8h">
+                                <rect key="frame" x="27" y="147" width="321" height="354"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="438" id="Gc6-wz-UCL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="count " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1r-PL-B18">
+                                <rect key="frame" x="317" y="54" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hr1-KN-Y8h" firstAttribute="leading" secondItem="zWY-7q-IwW" secondAttribute="leading" constant="24" id="6ub-pZ-oYU"/>
+                            <constraint firstItem="hr1-KN-Y8h" firstAttribute="top" secondItem="Z1r-PL-B18" secondAttribute="bottom" constant="26" id="o48-0K-rW0"/>
+                            <constraint firstItem="zWY-7q-IwW" firstAttribute="bottom" secondItem="hr1-KN-Y8h" secondAttribute="bottom" constant="129" id="oCh-xs-WcR"/>
+                            <constraint firstItem="hr1-KN-Y8h" firstAttribute="centerX" secondItem="kbg-Zt-hle" secondAttribute="centerX" id="qrT-Ra-aB7"/>
+                            <constraint firstItem="zWY-7q-IwW" firstAttribute="trailing" secondItem="Z1r-PL-B18" secondAttribute="trailing" constant="16" id="ryH-Hr-agT"/>
+                            <constraint firstItem="Z1r-PL-B18" firstAttribute="top" secondItem="zWY-7q-IwW" secondAttribute="top" constant="21" id="v12-Sg-NCG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zWY-7q-IwW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KRp-EH-RZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="677.60000000000002" y="60.719640179910051"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="20737.png" width="2771" height="2512"/>
+    </resources>
 </document>
