@@ -12,12 +12,10 @@ class ViewController: UIViewController {
 
     @IBAction func startButtonPress(sender: AnyObject) {
         performSegue(withIdentifier: "PizaSegue",sender: self)
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

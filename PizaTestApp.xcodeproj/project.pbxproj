@@ -13,6 +13,9 @@
 		5B0FC8F021E0BBD800CCF51C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B0FC8EF21E0BBD800CCF51C /* Assets.xcassets */; };
 		5B0FC8F321E0BBD800CCF51C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0FC8F121E0BBD800CCF51C /* LaunchScreen.storyboard */; };
 		5B0FC8FD21E0C1FE00CCF51C /* 20737.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B0FC8FC21E0C1FE00CCF51C /* 20737.png */; };
+		5B87B93021E0D09700FF872A /* 41478.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B87B92F21E0D09600FF872A /* 41478.png */; };
+		5B96AAA121E1EBAD005E229A /* PizaResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96AAA021E1EBAD005E229A /* PizaResultController.swift */; };
+		5B96AAA321E1F095005E229A /* 017_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B96AAA221E1F093005E229A /* 017_circle.png */; };
 		5BD0570C21E0C44800810738 /* 4507.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BD0570B21E0C44800810738 /* 4507.png */; };
 		5BD0570E21E0C5CF00810738 /* 4507_batu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BD0570D21E0C5CF00810738 /* 4507_batu.png */; };
 		5BD0571021E0C62A00810738 /* PizaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0570F21E0C62A00810738 /* PizaController.swift */; };
@@ -27,6 +30,9 @@
 		5B0FC8F221E0BBD800CCF51C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B0FC8F421E0BBD800CCF51C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B0FC8FC21E0C1FE00CCF51C /* 20737.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20737.png; sourceTree = "<group>"; };
+		5B87B92F21E0D09600FF872A /* 41478.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 41478.png; sourceTree = "<group>"; };
+		5B96AAA021E1EBAD005E229A /* PizaResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizaResultController.swift; sourceTree = "<group>"; };
+		5B96AAA221E1F093005E229A /* 017_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 017_circle.png; sourceTree = "<group>"; };
 		5BD0570B21E0C44800810738 /* 4507.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4507.png; sourceTree = "<group>"; };
 		5BD0570D21E0C5CF00810738 /* 4507_batu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4507_batu.png; sourceTree = "<group>"; };
 		5BD0570F21E0C62A00810738 /* PizaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizaController.swift; sourceTree = "<group>"; };
@@ -65,9 +71,12 @@
 				5B0FC8E821E0BBD300CCF51C /* AppDelegate.swift */,
 				5B0FC8EA21E0BBD300CCF51C /* ViewController.swift */,
 				5BD0570F21E0C62A00810738 /* PizaController.swift */,
+				5B96AAA021E1EBAD005E229A /* PizaResultController.swift */,
 				5BD0570B21E0C44800810738 /* 4507.png */,
 				5BD0570D21E0C5CF00810738 /* 4507_batu.png */,
+				5B87B92F21E0D09600FF872A /* 41478.png */,
 				5B0FC8FC21E0C1FE00CCF51C /* 20737.png */,
+				5B96AAA221E1F093005E229A /* 017_circle.png */,
 				5B0FC8EC21E0BBD300CCF51C /* Main.storyboard */,
 				5B0FC8EF21E0BBD800CCF51C /* Assets.xcassets */,
 				5B0FC8F121E0BBD800CCF51C /* LaunchScreen.storyboard */,
@@ -136,9 +145,11 @@
 			files = (
 				5B0FC8F321E0BBD800CCF51C /* LaunchScreen.storyboard in Resources */,
 				5B0FC8F021E0BBD800CCF51C /* Assets.xcassets in Resources */,
+				5B96AAA321E1F095005E229A /* 017_circle.png in Resources */,
 				5BD0570C21E0C44800810738 /* 4507.png in Resources */,
 				5B0FC8FD21E0C1FE00CCF51C /* 20737.png in Resources */,
 				5B0FC8EE21E0BBD300CCF51C /* Main.storyboard in Resources */,
+				5B87B93021E0D09700FF872A /* 41478.png in Resources */,
 				5BD0570E21E0C5CF00810738 /* 4507_batu.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B96AAA121E1EBAD005E229A /* PizaResultController.swift in Sources */,
 				5BD0571021E0C62A00810738 /* PizaController.swift in Sources */,
 				5B0FC8EB21E0BBD300CCF51C /* ViewController.swift in Sources */,
 				5B0FC8E921E0BBD300CCF51C /* AppDelegate.swift in Sources */,
